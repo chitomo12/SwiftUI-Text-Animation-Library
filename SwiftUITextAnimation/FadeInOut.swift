@@ -8,34 +8,49 @@
 import SwiftUI
 
 struct FadeInOut: View {
-    @State var characters = Array("縁日の古著屋多き夜寒かな")
-    @State var charactersTwo = Array("正岡子規")
-    @State var opacity: Double = 0
-    
-    
     var body: some View {
         VStack{
             Text("Fade In and Out")
                 .fontWeight(.heavy)
                 .padding()
-        
-            HStack(spacing:0){
-                ForEach(0..<characters.count) { num in
-                    Text(String(self.characters[num]))
-                        .font(.title)
-                        .opacity(opacity)
-                        .animation(.easeInOut.delay( Double(num) * 0.05 ),
-                                   value: opacity)
-                }
+            
+            FadeInOutView(text: "縁日の古著屋多き夜寒かな", startTime: 0.1).padding()
+            
+            FadeInOutView(text: "正岡子規", startTime: 1.0).padding()
+        }
+    }
+}
+
+struct FadeInOutView: View {
+    
+    @State var characters: Array<String.Element>
+    @State var opacity: Double = 0
+    @State var baseTime: Double
+    
+    init(text: String, startTime: Double) {
+        characters = Array(text)
+        baseTime = startTime
+    }
+    
+    var body: some View {
+        HStack(spacing:0){
+            ForEach(0..<characters.count) { num in
+                Text(String(self.characters[num]))
+                    .font(.title)
+                    .opacity(opacity)
+                    .animation(.easeInOut.delay( Double(num) * 0.05 ),
+                               value: opacity)
             }
-            .onAppear {
+        }
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + baseTime){
                 opacity = 1
             }
-            .onTapGesture {
-                opacity = 0
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5){
-                    opacity = 1
-                }
+        }
+        .onTapGesture {
+            opacity = 0
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5){
+                opacity = 1
             }
         }
     }
