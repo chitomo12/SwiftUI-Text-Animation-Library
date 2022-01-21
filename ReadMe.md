@@ -6,13 +6,17 @@ Make your app more sophisticated 🔥
 
 This is a SwiftUI text animation library, using only SwiftUI's basic functions.
 
+## Blur 
 
-# Fade In and Out
+<img src="image/BlurPreview.gif" width="500">
+
+
+## Fade In and Out
 
 <img src="image/FadeInOut.gif" width="500">
 
 
-# Bounce Text
+## Bounce Text
 
 <img src="image/BounceImage.gif" width="400">
 

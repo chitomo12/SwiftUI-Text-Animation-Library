@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		132E4189279A6BF100F396A4 /* Flip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132E4188279A6BF100F396A4 /* Flip.swift */; };
 		133EF49B2798260900110E2E /* DistortInOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133EF49A2798260800110E2E /* DistortInOut.swift */; };
 		134D50D127998EE8004F640B /* Burst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134D50D027998EE8004F640B /* Burst.swift */; };
 		134D50D327999374004F640B /* FadeInOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134D50D227999374004F640B /* FadeInOut.swift */; };
@@ -22,9 +23,12 @@
 		13D90DD027997C5A0080CA48 /* Bounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D90DCF27997C5A0080CA48 /* Bounce.swift */; };
 		13EC64AE27721698001EA237 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC64AD27721698001EA237 /* Character.swift */; };
 		13FE91B32798328B00356549 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FE91B22798328B00356549 /* Block.swift */; };
+		13FF81A4279ADD8200218D9B /* Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FF81A3279ADD8200218D9B /* Blur.swift */; };
+		13FF81AA279AE43900218D9B /* BlurPreview.gif in Resources */ = {isa = PBXBuildFile; fileRef = 13FF81A9279AE43900218D9B /* BlurPreview.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		132E4188279A6BF100F396A4 /* Flip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flip.swift; sourceTree = "<group>"; };
 		133EF49A2798260800110E2E /* DistortInOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistortInOut.swift; sourceTree = "<group>"; };
 		134D50D027998EE8004F640B /* Burst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Burst.swift; sourceTree = "<group>"; };
 		134D50D227999374004F640B /* FadeInOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeInOut.swift; sourceTree = "<group>"; };
@@ -41,6 +45,8 @@
 		13D90DCF27997C5A0080CA48 /* Bounce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bounce.swift; sourceTree = "<group>"; };
 		13EC64AD27721698001EA237 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		13FE91B22798328B00356549 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		13FF81A3279ADD8200218D9B /* Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blur.swift; sourceTree = "<group>"; };
+		13FF81A9279AE43900218D9B /* BlurPreview.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = BlurPreview.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,7 @@
 			children = (
 				134D50D927999CC2004F640B /* FadeInOut.gif */,
 				134D50D72799989A004F640B /* BounceImage.gif */,
+				13FF81A9279AE43900218D9B /* BlurPreview.gif */,
 			);
 			path = image;
 			sourceTree = "<group>";
@@ -86,7 +93,6 @@
 			children = (
 				1366568E27709A7300A635FB /* SwiftUITextAnimationApp.swift */,
 				1366569027709A7300A635FB /* ContentView.swift */,
-				1366569C2770AFB400A635FB /* TrimTest.swift */,
 				1366569E2770B29400A635FB /* WithAnimationTest.swift */,
 				13EC64AD27721698001EA237 /* Character.swift */,
 				133EF49A2798260800110E2E /* DistortInOut.swift */,
@@ -94,7 +100,10 @@
 				13D90DCF27997C5A0080CA48 /* Bounce.swift */,
 				134D50D027998EE8004F640B /* Burst.swift */,
 				134D50D227999374004F640B /* FadeInOut.swift */,
+				132E4188279A6BF100F396A4 /* Flip.swift */,
+				13FF81A3279ADD8200218D9B /* Blur.swift */,
 				1366569227709A7500A635FB /* Assets.xcassets */,
+				13FF81AB279AE4DC00218D9B /* Backup */,
 				1366569427709A7500A635FB /* Preview Content */,
 			);
 			path = SwiftUITextAnimation;
@@ -106,6 +115,14 @@
 				1366569527709A7500A635FB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		13FF81AB279AE4DC00218D9B /* Backup */ = {
+			isa = PBXGroup;
+			children = (
+				1366569C2770AFB400A635FB /* TrimTest.swift */,
+			);
+			path = Backup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +188,7 @@
 				1366569327709A7500A635FB /* Assets.xcassets in Resources */,
 				134D50D82799989A004F640B /* BounceImage.gif in Resources */,
 				134D50D527999623004F640B /* ReadMe.md in Resources */,
+				13FF81AA279AE43900218D9B /* BlurPreview.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,8 +202,10 @@
 				133EF49B2798260900110E2E /* DistortInOut.swift in Sources */,
 				13FE91B32798328B00356549 /* Block.swift in Sources */,
 				1366569127709A7300A635FB /* ContentView.swift in Sources */,
+				132E4189279A6BF100F396A4 /* Flip.swift in Sources */,
 				134D50D327999374004F640B /* FadeInOut.swift in Sources */,
 				13D90DD027997C5A0080CA48 /* Bounce.swift in Sources */,
+				13FF81A4279ADD8200218D9B /* Blur.swift in Sources */,
 				1366568F27709A7300A635FB /* SwiftUITextAnimationApp.swift in Sources */,
 				13EC64AE27721698001EA237 /* Character.swift in Sources */,
 				1366569F2770B29400A635FB /* WithAnimationTest.swift in Sources */,
