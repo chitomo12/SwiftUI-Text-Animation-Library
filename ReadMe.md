@@ -21,6 +21,11 @@ This is a SwiftUI text animation library, using only SwiftUI's basic functions.
 <img src="image/BlurPreview.gif" width="600">
 
 
+## DropShadow 
+
+<img src="image/DropShadow.gif" width="450">
+
+
 ## Fade In and Out
 
 <img src="image/FadeInOut.gif" width="600">
@@ -28,5 +33,5 @@ This is a SwiftUI text animation library, using only SwiftUI's basic functions.
 
 ## Bounce Text
 
-<img src="image/BounceImage.gif" width="400">
+<img src="image/BounceImage.gif" width="450">
 
