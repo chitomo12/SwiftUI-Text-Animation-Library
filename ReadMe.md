@@ -6,6 +6,10 @@ Make your app more animated 🔥
 
 This is a SwiftUI text animation library, using only SwiftUI's basic functions.
 
+## BlinkingWithBlur 
+
+<img src="image/BlinkingWithBlur.gif" width="500">
+
 ## Block 
 
 <img src="image/Block.gif" width="500">

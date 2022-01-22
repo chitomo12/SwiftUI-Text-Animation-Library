@@ -14,6 +14,7 @@
 		134D50D527999623004F640B /* ReadMe.md in Resources */ = {isa = PBXBuildFile; fileRef = 134D50D427999623004F640B /* ReadMe.md */; };
 		134D50D82799989A004F640B /* BounceImage.gif in Resources */ = {isa = PBXBuildFile; fileRef = 134D50D72799989A004F640B /* BounceImage.gif */; };
 		134D50DA27999CC2004F640B /* FadeInOut.gif in Resources */ = {isa = PBXBuildFile; fileRef = 134D50D927999CC2004F640B /* FadeInOut.gif */; };
+		135EF9AD279BF84C0034E6B0 /* BlinkingWithBlur.gif in Resources */ = {isa = PBXBuildFile; fileRef = 135EF9AC279BF84C0034E6B0 /* BlinkingWithBlur.gif */; };
 		1366568F27709A7300A635FB /* SwiftUITextAnimationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1366568E27709A7300A635FB /* SwiftUITextAnimationApp.swift */; };
 		1366569127709A7300A635FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1366569027709A7300A635FB /* ContentView.swift */; };
 		1366569327709A7500A635FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1366569227709A7500A635FB /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 		1366569D2770AFB400A635FB /* TrimTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1366569C2770AFB400A635FB /* TrimTest.swift */; };
 		1366569F2770B29400A635FB /* WithAnimationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1366569E2770B29400A635FB /* WithAnimationTest.swift */; };
 		137BBF73279BE13900F78FFE /* Block.gif in Resources */ = {isa = PBXBuildFile; fileRef = 137BBF72279BE13900F78FFE /* Block.gif */; };
+		137BBF75279BE7F300F78FFE /* BlinkingWithBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137BBF74279BE7F300F78FFE /* BlinkingWithBlur.swift */; };
 		13D90DD027997C5A0080CA48 /* Bounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D90DCF27997C5A0080CA48 /* Bounce.swift */; };
 		13EC64AE27721698001EA237 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC64AD27721698001EA237 /* Character.swift */; };
 		13FE91B32798328B00356549 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FE91B22798328B00356549 /* Block.swift */; };
@@ -36,6 +38,7 @@
 		134D50D427999623004F640B /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
 		134D50D72799989A004F640B /* BounceImage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = BounceImage.gif; sourceTree = "<group>"; };
 		134D50D927999CC2004F640B /* FadeInOut.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = FadeInOut.gif; sourceTree = "<group>"; };
+		135EF9AC279BF84C0034E6B0 /* BlinkingWithBlur.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = BlinkingWithBlur.gif; sourceTree = "<group>"; };
 		1366568B27709A7300A635FB /* SwiftUITextAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITextAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1366568E27709A7300A635FB /* SwiftUITextAnimationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITextAnimationApp.swift; sourceTree = "<group>"; };
 		1366569027709A7300A635FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +47,7 @@
 		1366569C2770AFB400A635FB /* TrimTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimTest.swift; sourceTree = "<group>"; };
 		1366569E2770B29400A635FB /* WithAnimationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithAnimationTest.swift; sourceTree = "<group>"; };
 		137BBF72279BE13900F78FFE /* Block.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Block.gif; sourceTree = "<group>"; };
+		137BBF74279BE7F300F78FFE /* BlinkingWithBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkingWithBlur.swift; sourceTree = "<group>"; };
 		13D90DCF27997C5A0080CA48 /* Bounce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bounce.swift; sourceTree = "<group>"; };
 		13EC64AD27721698001EA237 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		13FE91B22798328B00356549 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
@@ -65,6 +69,7 @@
 		134D50D627999884004F640B /* image */ = {
 			isa = PBXGroup;
 			children = (
+				135EF9AC279BF84C0034E6B0 /* BlinkingWithBlur.gif */,
 				137BBF72279BE13900F78FFE /* Block.gif */,
 				134D50D927999CC2004F640B /* FadeInOut.gif */,
 				134D50D72799989A004F640B /* BounceImage.gif */,
@@ -105,6 +110,7 @@
 				134D50D227999374004F640B /* FadeInOut.swift */,
 				132E4188279A6BF100F396A4 /* Flip.swift */,
 				13FF81A3279ADD8200218D9B /* Blur.swift */,
+				137BBF74279BE7F300F78FFE /* BlinkingWithBlur.swift */,
 				1366569227709A7500A635FB /* Assets.xcassets */,
 				13FF81AB279AE4DC00218D9B /* Backup */,
 				1366569427709A7500A635FB /* Preview Content */,
@@ -192,6 +198,7 @@
 				134D50D82799989A004F640B /* BounceImage.gif in Resources */,
 				134D50D527999623004F640B /* ReadMe.md in Resources */,
 				13FF81AA279AE43900218D9B /* BlurPreview.gif in Resources */,
+				135EF9AD279BF84C0034E6B0 /* BlinkingWithBlur.gif in Resources */,
 				137BBF73279BE13900F78FFE /* Block.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,6 +222,7 @@
 				1366569F2770B29400A635FB /* WithAnimationTest.swift in Sources */,
 				134D50D127998EE8004F640B /* Burst.swift in Sources */,
 				1366569D2770AFB400A635FB /* TrimTest.swift in Sources */,
+				137BBF75279BE7F300F78FFE /* BlinkingWithBlur.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,7 +350,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUITextAnimation/Preview Content\"";
 				DEVELOPMENT_TEAM = 5VM7ARKGV2;
@@ -360,6 +369,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = chitomo12.SwiftUITextAnimationApp;
 				PRODUCT_NAME = SwiftUITextAnimation;
+				PROVISIONING_PROFILE_SPECIFIER = TextAnimationProfile;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -371,7 +381,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUITextAnimation/Preview Content\"";
 				DEVELOPMENT_TEAM = 5VM7ARKGV2;
@@ -389,6 +400,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = chitomo12.SwiftUITextAnimationApp;
 				PRODUCT_NAME = SwiftUITextAnimation;
+				PROVISIONING_PROFILE_SPECIFIER = TextAnimationProfile;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
