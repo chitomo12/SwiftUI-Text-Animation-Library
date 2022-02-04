@@ -25,6 +25,8 @@
 		1366569F2770B29400A635FB /* WithAnimationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1366569E2770B29400A635FB /* WithAnimationTest.swift */; };
 		137BBF73279BE13900F78FFE /* Block.gif in Resources */ = {isa = PBXBuildFile; fileRef = 137BBF72279BE13900F78FFE /* Block.gif */; };
 		137BBF75279BE7F300F78FFE /* BlinkingWithBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137BBF74279BE7F300F78FFE /* BlinkingWithBlur.swift */; };
+		139C390027ACDBF3009037E2 /* RouletteText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139C38FF27ACDBF3009037E2 /* RouletteText.swift */; };
+		139C390227AD5758009037E2 /* Roulette.gif in Resources */ = {isa = PBXBuildFile; fileRef = 139C390127AD5758009037E2 /* Roulette.gif */; };
 		13D90DD027997C5A0080CA48 /* Bounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D90DCF27997C5A0080CA48 /* Bounce.swift */; };
 		13EC64AE27721698001EA237 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EC64AD27721698001EA237 /* Character.swift */; };
 		13FE91B32798328B00356549 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FE91B22798328B00356549 /* Block.swift */; };
@@ -52,6 +54,8 @@
 		1366569E2770B29400A635FB /* WithAnimationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithAnimationTest.swift; sourceTree = "<group>"; };
 		137BBF72279BE13900F78FFE /* Block.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Block.gif; sourceTree = "<group>"; };
 		137BBF74279BE7F300F78FFE /* BlinkingWithBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkingWithBlur.swift; sourceTree = "<group>"; };
+		139C38FF27ACDBF3009037E2 /* RouletteText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteText.swift; sourceTree = "<group>"; };
+		139C390127AD5758009037E2 /* Roulette.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Roulette.gif; sourceTree = "<group>"; };
 		13D90DCF27997C5A0080CA48 /* Bounce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bounce.swift; sourceTree = "<group>"; };
 		13EC64AD27721698001EA237 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		13FE91B22798328B00356549 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
@@ -79,6 +83,7 @@
 				13FF81A9279AE43900218D9B /* BlurPreview.gif */,
 				135EF9B0279C03180034E6B0 /* DropShadow.gif */,
 				134D50D927999CC2004F640B /* FadeInOut.gif */,
+				139C390127AD5758009037E2 /* Roulette.gif */,
 			);
 			path = image;
 			sourceTree = "<group>";
@@ -116,6 +121,7 @@
 				132E4188279A6BF100F396A4 /* Flip.swift */,
 				13FF81A3279ADD8200218D9B /* Blur.swift */,
 				135EF9AE279BFCC80034E6B0 /* DropShadow.swift */,
+				139C38FF27ACDBF3009037E2 /* RouletteText.swift */,
 				137BBF74279BE7F300F78FFE /* BlinkingWithBlur.swift */,
 				1366569227709A7500A635FB /* Assets.xcassets */,
 				13FF81AB279AE4DC00218D9B /* Backup */,
@@ -198,6 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				139C390227AD5758009037E2 /* Roulette.gif in Resources */,
 				134D50DA27999CC2004F640B /* FadeInOut.gif in Resources */,
 				135EF9B1279C03180034E6B0 /* DropShadow.gif in Resources */,
 				1366569627709A7500A635FB /* Preview Assets.xcassets in Resources */,
@@ -223,6 +230,7 @@
 				132E4189279A6BF100F396A4 /* Flip.swift in Sources */,
 				134D50D327999374004F640B /* FadeInOut.swift in Sources */,
 				13D90DD027997C5A0080CA48 /* Bounce.swift in Sources */,
+				139C390027ACDBF3009037E2 /* RouletteText.swift in Sources */,
 				13FF81A4279ADD8200218D9B /* Blur.swift in Sources */,
 				1366568F27709A7300A635FB /* SwiftUITextAnimationApp.swift in Sources */,
 				135EF9AF279BFCC80034E6B0 /* DropShadow.swift in Sources */,

@@ -6,6 +6,12 @@ Make your app more animated 🔥
 
 This is a SwiftUI text animation library, using only SwiftUI's basic functions.
 
+
+## RouletteText
+
+<img src="image/Roulette.gif" width="500">
+
+
 ## BlinkingWithBlur 
 
 <img src="image/BlinkingWithBlur.gif" width="600">

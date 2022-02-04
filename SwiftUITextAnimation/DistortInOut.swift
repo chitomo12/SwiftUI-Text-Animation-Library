@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct DistortInOut: View {
-    @State var characters = Array("目つむりていても吾を統ぶ五月の鷹")
-    @State var switchOne: Bool = false
-    @State var switchOne_Two: Bool = false
-    @State var offsetXOne: CGFloat = 0
+    let characters = Array("秋空を二つに断てり椎大樹")
+    @State var scaleSwitch: Bool = false
+    @State var TextOffsetX: CGFloat = 0
     
     var body: some View {
         VStack{
@@ -19,27 +18,25 @@ struct DistortInOut: View {
             HStack(spacing:0){
                 ForEach(0..<characters.count) { num in
                     Text(String(self.characters[num]))
-                        .font(.custom("HiraMinProN-W3", fixedSize: 28))
-                        .offset(x: offsetXOne, y: 0)
-                        .scaleEffect(x: 1, y: switchOne_Two ? 0 : 1)
-                        .animation(.easeInOut.delay( Double(num) * 0.05 ), value: offsetXOne)
-                        .animation(.easeInOut.delay( Double(num) * 0.05 ), value: switchOne_Two)
+                        .font(.custom("HiraMinProN-W3", fixedSize: 24))
+                        .offset(x: TextOffsetX, y: 0)
+                        .scaleEffect(x: 1, y: scaleSwitch ? 0 : 1)
+                        .animation(.easeInOut.delay( Double(num) * 0.05 ), value: TextOffsetX)
+                        .animation(.easeInOut.delay( Double(num) * 0.05 ), value: scaleSwitch)
                 }
             }
             .onTapGesture {
-                switchOne_Two.toggle()
+                scaleSwitch.toggle()
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                    offsetXOne = -500
-                    switchOne.toggle()
+                    TextOffsetX = -500
                 }
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
-                    offsetXOne = 500
+                    TextOffsetX = 500
                 }
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
-                    offsetXOne = 0
-                    switchOne.toggle()
+                    TextOffsetX = 0
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                        switchOne_Two.toggle()
+                        scaleSwitch.toggle()
                     }
                 }
             }

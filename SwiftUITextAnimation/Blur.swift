@@ -8,38 +8,27 @@
 import SwiftUI
 
 struct Blur: View {
-    
     var body: some View {
-        
         VStack(alignment: .leading) {
             Text("Blur Animation")
                 .fontWeight(.heavy)
                 .foregroundColor(.gray)
-            Rectangle()
-                    .frame(width: 10, height: 10, alignment: .leading)
-                    .opacity(0)
+                .padding(.bottom, 10)
             VStack(alignment: .leading) {
-            BlurView(text: "どうしようもない", textSize: 38, startTime: 0.41)
-            
-            BlurView(text: "わたしが", textSize: 38, startTime: 1.85)
-
-            BlurView(text: "歩いている", textSize: 38, startTime: 2.76)
-            Rectangle()
-                    .frame(width: 10, height: 30, alignment: .leading)
-                    .opacity(0)
-            BlurView(text: "種田山頭火", textSize: 16, startTime: 3.76)
+                BlurView(text: "どうしようもない", textSize: 38, startTime: 0.41)
+                BlurView(text: "わたしが", textSize: 38, startTime: 1.85)
+                BlurView(text: "歩いている", textSize: 38, startTime: 2.76)
+                BlurView(text: "種田山頭火", textSize: 16, startTime: 3.76)
+                        .padding(.top, 30)
             }
         }
     }
 }
 
 struct BlurView: View {
-    @State var characters: Array<String.Element>
-        
-    @State var baseTime: Double
-    
-    @State var textSize: Double
-    
+    let characters: Array<String.Element>
+    let baseTime: Double
+    let textSize: Double
     @State var blurValue: Double = 10
     @State var opacity: Double = 0
     

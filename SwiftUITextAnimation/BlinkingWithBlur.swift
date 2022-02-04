@@ -43,12 +43,10 @@ struct BlinkingWithBlurSample: View {
 }
 
 struct BlinkingWithBlur: View {
-    @State var characters: Array<String.Element>
-    @State var fontName: String
-        
-    @State var baseTime: Double
-    
-    @State var textSize: Double
+    let characters: Array<String.Element>
+    let fontName: String
+    let baseTime: Double
+    let textSize: Double
     
     @State var blurValue: Double = 10
     @State var opacity: Double = 0
