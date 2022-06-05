@@ -12,7 +12,8 @@ struct SwiftUITextAnimationApp: App {
     var body: some Scene {
         WindowGroup {
 //            ContentView()
-            Character()
+//            Character()
+            Bounce()
         }
     }
 }
